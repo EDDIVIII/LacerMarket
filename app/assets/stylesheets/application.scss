@@ -1,4 +1,30 @@
-/*
+@import "materialize";
+
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+      
+
+
+
+
+
+
+
+
+
+
+/* commenti vari 
+
+
+
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
  *
