@@ -45,6 +45,17 @@ gem 'materialize-sass', '~> 1.0.0'
 gem 'jquery-rails'
 
 
+gem 'jquery', '~> 0.0.1'
+
+
+
+gem 'javascript', '~> 0.1.0'
+
+
+gem 'devise'
+
+
+
 
 
 
