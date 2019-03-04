@@ -7,6 +7,7 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 
 
@@ -28,14 +29,14 @@
   <script>
    // $ (".button-collapse").sidenav();
 
-  document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.sidenav');
-    var instances = M.Sidenav.init(elems, options);
-  });
+  //document.addEventListener('DOMContentLoaded', function() {
+    //var elems = document.querySelectorAll('.sidenav');
+    //var instances = M.Sidenav.init(elems, options);
+  // });
 
-  // $(document).ready(function(){
-    // $('.sidenav').sidenav();
-   // });
+  $(document).ready(function(){
+   $('.sidenav').sidenav();
+   });
 
   </script>
 

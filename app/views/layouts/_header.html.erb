@@ -1,4 +1,22 @@
 
+ <header class="navbar-fixed">
+    <nav class="blue-grey darken-2">
+      <div class="container nav-wrapper">
+        <%= link_to "LacerMarket", root_path, class: "brand-logo" %>                  
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+        <ul class="right hide-on-med-and-down">
+              <li><%= link_to "About", about_path %></li>
+              <li><%= link_to "contacts", contacts_path %></li>
+        </ul>
+      </div>
+    </nav>
+ </header>
+
+      <ul class="sidenav" id="mobile-demo">
+            <li><%= link_to "About", about_path %></li>
+            <li><%= link_to "contacts", contacts_path %></li>
+      </ul>
 
 
 
@@ -6,6 +24,12 @@
 
 
 
+
+
+
+
+
+<!--
 
       <header class="navbar-fixed">
             <nav class="blue-grey darken-2">
@@ -26,3 +50,5 @@
                   </div>
             </nav>
       </header>
+
+-->
