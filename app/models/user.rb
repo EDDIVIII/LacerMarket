@@ -5,7 +5,10 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
 
-         has_many :contents
+  has_many :contents
+
+  validates :name, presence: true
+
 end
 
 
