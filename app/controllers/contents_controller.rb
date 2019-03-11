@@ -4,8 +4,9 @@ class ContentsController < ApplicationController
   before_action :check_user, only: [:edit, :update, :destroy ]
 
   
-  def index
-    @contents = Content.all
+  def index                #############################MODIFICA#####################################
+    @contents = Content.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 12) # OPPURE .limit(2) PER LIMITARE IL NUM DI ELEMENTI CVISIBILI,AGGIUNTA DI QUERY PER CREARE I CONTENUTI DAL PIU NUOVO AL PIU VECCHIO
+    #QUERY DISP SU SITO ACTIVE RECORDS QUERY 
   end
 
   
